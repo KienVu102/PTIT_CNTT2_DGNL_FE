@@ -51,6 +51,45 @@ body {
   cursor: not-allowed;
 }
 
+.bo-loc {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.o-tim,
+.o-loc {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+}
+
+.o-tim {
+  flex: 1;
+  min-width: 200px;
+}
+
+.o-loc {
+  min-width: 150px;
+}
+
+.phan-trang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.nut-sua:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .khung-bang {
   background: white;
   border: 1px solid #ddd;
@@ -224,6 +263,16 @@ body {
   .khung {
     margin: 16px auto;
     padding: 0 12px;
+  }
+
+  .bo-loc {
+    flex-direction: column;
+  }
+
+  .o-tim,
+  .o-loc {
+    width: 100%;
+    min-width: 0;
   }
 
   .khung-bang {
