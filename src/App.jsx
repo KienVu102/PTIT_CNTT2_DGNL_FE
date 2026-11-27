@@ -1,16 +1,18 @@
 export default function App() {
   return (
     <div>
-      <header className="header">OfficeMart Admin</header>
+      <header className="dau-trang">OfficeMart Admin</header>
 
-      <div className="content">
-        <div className="top-row">
-          <h2>Sản phẩm</h2>
-          <button className="add-btn">Thêm sản phẩm</button>
+      <main className="khung">
+        <div className="dong-tren">
+          <h1>Sản phẩm</h1>
+          <button type="button" className="nut-them">
+            Thêm sản phẩm
+          </button>
         </div>
 
-        <div className="table-wrap">
-          <table>
+        <div className="khung-bang">
+          <table className="bang-sp">
             <thead>
               <tr>
                 <th>Tên</th>
@@ -30,19 +32,53 @@ export default function App() {
                 <td>3.820.000 ₫</td>
                 <td>3</td>
                 <td>
-                  <span className="tag tag-on">Đang bán</span>
+                  <span className="nhan xanh">Đang bán</span>
                 </td>
                 <td>
-                  <div className="btn-group">
-                    <button className="btn-sua">Sửa</button>
-                    <button className="btn-xoa">Xoá</button>
+                  <div className="cum-nut">
+                    <button type="button" className="nut-sua">Sửa</button>
+                    <button type="button" className="nut-xoa">Xoá</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Chuột công thái học Vertical</td>
+                <td>MOU-0007</td>
+                <td>Chuột</td>
+                <td>200.000 ₫</td>
+                <td>9</td>
+                <td>
+                  <span className="nhan xam">Ngừng bán</span>
+                </td>
+                <td>
+                  <div className="cum-nut">
+                    <button type="button" className="nut-sua">Sửa</button>
+                    <button type="button" className="nut-xoa">Xoá</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Màn hình 24 inch FHD</td>
+                <td>MON-0003</td>
+                <td>Màn hình</td>
+                <td>2.060.000 ₫</td>
+                <td>
+                  <span className="chu-do">Hết hàng</span>
+                </td>
+                <td>
+                  <span className="nhan xanh">Đang bán</span>
+                </td>
+                <td>
+                  <div className="cum-nut">
+                    <button type="button" className="nut-sua">Sửa</button>
+                    <button type="button" className="nut-xoa">Xoá</button>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
+      </main>
     </div>
   );
 }

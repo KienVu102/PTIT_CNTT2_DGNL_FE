@@ -4,110 +4,165 @@
 
 body {
   margin: 0;
-  background: #f4f5f7;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
   color: #222;
 }
 
-.header {
+.dau-trang {
   background: #b91c1c;
-  color: #fff;
+  color: white;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: bold;
   padding: 14px 24px;
 }
 
-.content {
-  max-width: 1120px;
-  margin: 30px auto;
-  padding: 0 20px;
+.khung {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 0 16px;
 }
 
-.top-row {
+.dong-tren {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
 }
 
-.top-row h2 {
+.dong-tren h1 {
   margin: 0;
   font-size: 24px;
 }
 
-.add-btn {
+.nut-them {
   background: #b91c1c;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 6px;
   padding: 10px 16px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
 }
 
-.table-wrap {
-  background: #fff;
-  border: 1px solid #e5e7eb;
+.khung-bang {
+  background: white;
+  border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
 }
 
-.table-wrap table {
+.bang-sp {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
   font-size: 14px;
 }
 
-.table-wrap thead {
-  background: #f9fafb;
+.bang-sp thead {
+  background: #f9f9f9;
 }
 
-.table-wrap th,
-.table-wrap td {
-  padding: 14px 16px;
+.bang-sp th,
+.bang-sp td {
+  padding: 12px 16px;
   border-bottom: 1px solid #eee;
 }
 
-.table-wrap th {
-  font-weight: 600;
-  color: #333;
+.chu-do {
+  color: red;
+  font-weight: bold;
 }
 
-.tag {
+.nhan {
   display: inline-block;
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: 16px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
-.tag-on {
+.xanh {
   background: #dcfce7;
   color: #166534;
 }
 
-.btn-group {
+.xam {
+  background: #e5e7eb;
+  color: #555;
+}
+
+.cum-nut {
   display: flex;
   gap: 8px;
 }
 
-.btn-sua,
-.btn-xoa {
-  background: #fff;
+.nut-sua,
+.nut-xoa {
+  background: white;
   border-radius: 6px;
-  padding: 5px 12px;
+  padding: 4px 12px;
   font-size: 13px;
   cursor: pointer;
 }
 
-.btn-sua {
+.nut-sua {
   border: 1px solid #ccc;
   color: #333;
 }
 
-.btn-xoa {
-  border: 1px solid #f5a5a5;
+.nut-xoa {
+  border: 1px solid #fca5a5;
   color: #dc2626;
+}
+
+@media (max-width: 767px) {
+  .khung {
+    margin: 16px auto;
+    padding: 0 12px;
+  }
+
+  .khung-bang {
+    background: transparent;
+    border: none;
+  }
+
+  .bang-sp,
+  .bang-sp tbody,
+  .bang-sp tr,
+  .bang-sp td {
+    display: block;
+    width: 100%;
+  }
+
+  .bang-sp thead {
+    display: none;
+  }
+
+  .bang-sp tbody tr {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+  }
+
+  .bang-sp td {
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bang-sp td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+  }
+
+  .bang-sp td:last-child {
+    border-bottom: none;
+  }
 }
