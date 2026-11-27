@@ -46,6 +46,11 @@ body {
   cursor: pointer;
 }
 
+.nut-them:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .khung-bang {
   background: white;
   border: 1px solid #ddd;
@@ -115,6 +120,104 @@ body {
 .nut-xoa {
   border: 1px solid #fca5a5;
   color: #dc2626;
+}
+
+.hop-trang-thai {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.hop-loi {
+  border-color: #fca5a5;
+  color: #b91c1c;
+  margin-bottom: 16px;
+}
+
+.khung-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-sp {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.o-nhap {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.o-nhap label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.o-nhap input,
+.o-nhap select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.loi-nho {
+  margin: 0;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.nen-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.hop-modal {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.hop-modal h3 {
+  margin: 0 0 8px;
+}
+
+.hop-modal p {
+  margin: 0 0 16px;
+  font-size: 14px;
+}
+
+.nut-modal {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.thong-bao {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #166534;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {

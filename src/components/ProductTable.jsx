@@ -1,6 +1,6 @@
 import ProductRow from './ProductRow';
 
-export default function ProductTable({ products }) {
+export default function ProductTable({ products = [], dsDanhMuc, onEdit, onDelete }) {
   return (
     <div className="khung-bang">
       <table className="bang-sp" data-testid="product-table">
@@ -17,7 +17,13 @@ export default function ProductTable({ products }) {
         </thead>
         <tbody>
           {products.map((sp) => (
-            <ProductRow key={sp.id} product={sp} />
+            <ProductRow
+              key={sp.id}
+              product={sp}
+              dsDanhMuc={dsDanhMuc}
+              onEdit={onEdit}
+              onDelete={onDelete}
+            />
           ))}
         </tbody>
       </table>
